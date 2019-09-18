@@ -63,6 +63,7 @@ static NSString *const kStrokeColorAnimationKey = @"StrokeColorAnimationKey";
     _shapeLayer.fillColor = [UIColor clearColor].CGColor;
     _shapeLayer.strokeColor = ((UIColor *)self.colors[0]).CGColor;
     _shapeLayer.lineWidth = self.lineWidth;
+    _shapeLayer.lineCap   = kCALineCapRound;
     _shapeLayer.frame = self.bounds;
     _shapeLayer.strokeStart = 0;
     _shapeLayer.strokeEnd = 0;
